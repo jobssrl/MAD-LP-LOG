@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MAD-LP-LOG</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      background-color: #CCCCCC;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; /* Logo/título a la izquierda, botón a la derecha */
+      align-items: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    header h1::before {
+      content: "📊";
+      margin-right: 10px;
+      font-size: 28px;
+    }
+
+    .download-btn {
+      background: linear-gradient(135deg, #0074D9, #001f3f);
+      color: white;
+      padding: 12px 22px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 20px 20px 20px;
+    }
+
+    iframe {
+      width: 90vw;
+      height: 80vh;
+      border: 2px solid #001f3f;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Logo">
+      <h1>MAD-LP-LOG</h1>
+    </div>
+    <a href="https://1drv.ms/x/c/a3d1fea0c2538ed3/ERoc67K9ayxJpW5a7jQk_BsB_BArkPAymjS9IvoFafOzqg?e=14GJa5" 
+       target="_blank"
+       class="download-btn">
+       📥 Descargar información
+    </a>
+  </header>
+
+  <div class="iframe-container">
+    <iframe 
+      src="https://app.powerbi.com/view?r=eyJrIjoiNGI5ODM0MDMtNThmMS00NTU5LWEzNTgtZDc2MzViZGVkZWMzIiwidCI6IjE0Mzg0YTY2LWEwYWYtNDNjNC1iMDFhLTMxM2FjZjdhYzYyNiIsImMiOjR9" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    Información propiedad de JOBS SRL, sujeta a revisión.
+  </footer>
+
+</body>
+</html>
